@@ -1,6 +1,6 @@
 <?php
 
-$apiKey = 'D1L3FwzTDwSDwEZODiKJC61tEnNpPcfFvwWdbXf4';
+$apiKey = 'API-KEY-NASA';
 
 $url = "https://api.nasa.gov/planetary/apod?api_key=" . $apiKey;
 

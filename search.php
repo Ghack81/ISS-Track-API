@@ -12,7 +12,7 @@
 					url: 'https://api.nasa.gov/planetary/search',
 					data: {
 						q: searchQuery,
-						api_key: 'D1L3FwzTDwSDwEZODiKJC61tEnNpPcfFvwWdbXf4'
+						api_key: 'Key-API-Nasa'
 					},
 					success: function(result) {
 						// Ici, vous pouvez afficher les résultats de la recherche
