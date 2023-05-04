@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Astro Location App</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=D1L3FwzTDwSDwEZODiKJC61tEnNpPcfFvwWdbXf4"></script>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            document.getElementById("location").innerHTML = "Latitude: " + lat + "<br>Longitude: " + lng;
+        }
+    </script>
+</head>
+<body onload="getLocation()">
+    <h1>My Astro Location App</h1>
+    <div id="location"></div>
+    Hello
+</body>
+</html>

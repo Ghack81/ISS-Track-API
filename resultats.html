@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Résultats de la recherche</title>
+	<script>
+		function initMap() {
+			var myLatLng = {lat: 48.8584, lng: 2.2945};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 4,
+				center: myLatLng
+			});
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: 'Paris'
+			});
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=D1L3FwzTDwSDwEZODiKJC61tEnNpPcfFvwWdbXf4&callback=initMap"
+	async defer></script>

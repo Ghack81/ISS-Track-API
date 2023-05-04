@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Localisation des astres</title>
+	<script>
+		function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				alert("La géolocalisation n'est pas supportée par ce navigateur.");
+			}
+		}
+		function showPosition(position) {
+			// Ici, vous pouvez utiliser la position de l'utilisateur pour afficher une carte 
+            //ou des informations sur les astres et objets astronomiques à proximité.
+			console.log("Latitude: " + position.coords.latitude +
+			" Longitude: " + position.coords.longitude);
+		}
+	</script>
+</head>
+<body onload="getLocation()">
+	<h1>Localisation des astres</h1>
+	<p>Cette application vous permet de localiser les astres et les objets astronomiques à proximité de votre position actuelle.</p>
+	<div id="map"></div>
+</body>
+</html>
